@@ -1,0 +1,19 @@
+parameter INPUT_WD=14,   //input sample width
+DBF_OP_WD=64,  //output width of summer unit
+DBF_WOT_OP_WD=64,//output width without truncation
+PROBE_WD=4,    //binary representation of inserted probe(2^4 probe types) 
+OUT_WD=64,     //output width of each dbf module
+ADDR_DEPTH=1024, //depends on number of input samples stored.
+FD_OUT_WD=31, //output width after fine delay
+ADDR_WD=12,    //address width of coarse and fine delay LUTs
+IN_RAM_ADDR=16,  //address width of input DP RAM
+CD_OUT_WD=14,  //output width after coarse delay
+FILTER_COFF=16, //width of mmse filter coefficients
+SCAN_LINES=61,      //2^8 scan lines
+SAMPLE_COUNT=20,  //counts input samples
+DYN_RNG=8,        //2^8 dynamic receive foci
+M_SAMPLE_COUNT=9,//M_SAMPLE_COUNT-N_SAMPLE_COUNT=ADDR_WD 11 to 9
+N_SAMPLE_COUNT=4, //total samples from one dynamic receive focus(2^4) 6 to 4
+SAMPLES_NF=1024,  //total samples received within near field(i.e.WITHIN DYNAMIC FOCUSING) 4096 to 1024
+TOT_SAMPLES=9431, //total samples from one scan line
+APO_WD=16         //apodization weight width
